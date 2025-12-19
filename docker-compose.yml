@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  # Service 1: The Backend API
+  backend:
+    build: ./backend
+    ports:
+      - "5000:5000"
+    container_name: skillbridge-backend
+
+  # Service 2: The Frontend UI
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    container_name: skillbridge-frontend
+    depends_on:
+      - backend  # Ensures backend starts first
+    stdin_open: true # Needed for React in Docker
+    tty: true        # Needed for React in Docker
