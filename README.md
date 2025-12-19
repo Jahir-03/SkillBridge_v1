@@ -19,8 +19,3 @@ This repository contains the **version_1 prototype**. It currently establishes t
 - [ ] User Authentication (Login/Signup)
 - [ ] Docker Containerization
 - [ ] Cloud Deployment 
-
-## How to Run
-1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/YOUR_USERNAME/SkillBridge_v1.git](https://github.com/YOUR_USERNAME/SkillBridge_v1.git)
